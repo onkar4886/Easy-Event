@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Event: Simplify College Events</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+            color: #334155;
+            overflow-x: hidden;
+        }
+        .text-shadow-outline {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .card {
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        .header-bg {
+            background-image: linear-gradient(to right top, #d16ba5, #c77bbf, #b18bd3, #949be1, #71aae9, #64aee9, #54b1e8, #40b5e8, #4cbce8, #59c3e7, #66cae5, #73d0e4);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header Section -->
+    <header class="header-bg text-white py-20 px-6 shadow-lg rounded-b-3xl">
+        <div class="container mx-auto text-center fade-in">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 text-shadow-outline animate-pulse">Easy Event</h1>
+            <p class="text-xl md:text-3xl font-medium opacity-90 animate-fade-in-down">Making college events easy, organized, and exciting.</p>
+            <div class="mt-8">
+                <a href="#about" class="bg-white text-purple-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16">
+
+        <!-- About Us Section -->
+        <section id="about" class="mb-20 fade-in">
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-purple-700 mb-8 cursor-pointer hover:underline">About Us</h2>
+            <div class="bg-white rounded-3xl shadow-2xl p-10 card">
+                <p class="text-lg md:text-xl leading-relaxed text-gray-700">
+                    Our motive with Easy Event is to provide students with the opportunity to easily view event details and participate in various events. The app allows students to effortlessly access event schedules, rules, prizes, and other essential information. Moreover, it assists event organizers in effectively managing registrations, payments, participant lists, and event logistics. Through Easy Event, organizing and participating in college events will be even simpler and more organized!
+                </p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="mb-20 fade-in">
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-purple-700 mb-8 cursor-pointer hover:underline">Key Features</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-white rounded-3xl shadow-2xl p-8 flex flex-col items-center text-center card">
+                    <div class="bg-indigo-200 rounded-full p-5 mb-5 transform transition-transform hover:scale-110">
+                        <svg class="w-14 h-14 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Easy Registration</h3>
+                    <p class="text-gray-600">Students can easily register for events and competitions.</p>
+                </div>
+                <div class="bg-white rounded-3xl shadow-2xl p-8 flex flex-col items-center text-center card">
+                    <div class="bg-green-200 rounded-full p-5 mb-5 transform transition-transform hover:scale-110">
+                        <svg class="w-14 h-14 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Secure Payments</h3>
+                    <p class="text-gray-600">Payments are processed through secure gateways like Razorpay.</p>
+                </div>
+                <div class="bg-white rounded-3xl shadow-2xl p-8 flex flex-col items-center text-center card">
+                    <div class="bg-yellow-200 rounded-full p-5 mb-5 transform transition-transform hover:scale-110">
+                        <svg class="w-14 h-14 text-yellow-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1a1 1 0 01-1-1v-1a1 1 0 011-1h1a1 1 0 011 1v1a1 1 0 01-1 1zm-3-1l3 3m-3-3l3-3"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">All Event Details</h3>
+                    <p class="text-gray-600">Get complete information on event rules, prizes, and schedules.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="mb-20 fade-in">
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-purple-700 mb-8 cursor-pointer hover:underline">Our Events</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-white rounded-3xl shadow-2xl p-8 card">
+                    <h3 class="text-2xl font-bold mb-3">Coding Competition</h3>
+                    <p class="text-gray-600">A platform for participants to showcase their coding skills.</p>
+                </div>
+                <div class="bg-white rounded-3xl shadow-2xl p-8 card">
+                    <h3 class="text-2xl font-bold mb-3">Paper Presentation</h3>
+                    <p class="text-gray-600">A chance for students to present their research and ideas.</p>
+                </div>
+                <div class="bg-white rounded-3xl shadow-2xl p-8 card">
+                    <h3 class="text-2xl font-bold mb-3">Rangoli Competition</h3>
+                    <p class="text-gray-600">A stage to showcase creative and artistic skills.</p>
+                </div>
+                <div class="bg-white rounded-3xl shadow-2xl p-8 card">
+                    <h3 class="text-2xl font-bold mb-3">Gaming Competition</h3>
+                    <p class="text-gray-600">An exciting challenge for gaming enthusiasts.</p>
+                </div>
+                <div class="bg-white rounded-3xl shadow-2xl p-8 card">
+                    <h3 class="text-2xl font-bold mb-3">Technical Quiz</h3>
+                    <p class="text-gray-600">An opportunity to test knowledge across various subjects.</p>
+                </div>
+                <div class="bg-white rounded-3xl shadow-2xl p-8 card">
+                    <h3 class="text-2xl font-bold mb-3">Poster Presentation</h3>
+                    <p class="text-gray-600">A platform to creatively display research.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="mb-20 fade-in">
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-purple-700 mb-8 cursor-pointer hover:underline">Contact Us</h2>
+            <div class="bg-white rounded-3xl shadow-2xl p-10 card">
+                <p class="text-center text-lg md:text-xl leading-relaxed text-gray-700 mb-6">If you have any questions or suggestions, feel free to contact us.</p>
+                <div class="flex justify-center space-x-8">
+                    <a href="mailto:connect.with.onkar@gmail.com" class="text-gray-600 hover:text-purple-600 transition-colors duration-300 transform hover:scale-125" aria-label="Email">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884zM18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                    </a>
+                    <a href="https://wa.me/918766902003" target="_blank" class="text-gray-600 hover:text-purple-600 transition-colors duration-300 transform hover:scale-125" aria-label="WhatsApp">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12">
+                          <path d="M12.016 2.01c-5.526 0-10.005 4.479-10.005 10.005s4.479 10.005 10.005 10.005c5.031 0 9.276-3.714 9.957-8.583l-1.92-0.741c-0.655 3.32-3.666 5.894-7.986 5.894-4.417 0-8.005-3.588-8.005-8.005s3.588-8.005 8.005-8.005c2.316 0 4.417 0.99 5.884 2.584l-2.023 2.023h5.044v-5.044l-2.091 2.091c-1.636-1.748-3.97-2.825-6.621-2.825z" fill="currentColor" stroke="none"/>
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.5 13.5c-.246.12-.5.176-.753.176-.23 0-.46-.051-.663-.153l-.2-.1a3.6 3.6 0 01-1.332-1.365l-.2-.367c-.05-.093-.07-.197-.07-.29v-1.12c0-.236.19-.427.42-.427h.885c.162 0 .313.09.395.234l.4.757c.07.135.2.207.338.207.14 0 .27-.07.34-.213l.4-.756c.07-.135.2-.208.338-.208h.885c.23 0 .42.19.42.427v1.12c0 .093-.02.197-.07.29l-.2.367c-.203.37-.472.687-.796.937-.2.15-.43.2-.662.2zm-4-4c-.236 0-.427.19-.427.427v.885c0 .162.09.313.235.395l.757.4c.135.07.207.2.207.338 0 .14-.07.27-.213.34l-.756.4c-.135.07-.208.2-.208.338v.885c0 .23.19.42.427.42h1.12c.093 0 .197-.02.29-.07l.367-.2c.37-.203.687-.472.937-.796.15-.2.2-.43.2-.662v-.885c0-.162-.09-.313-.235-.395l-.757-.4c-.135-.07-.207-.2-.207-.338 0-.14.07-.27.213-.34l.756-.4c.135-.07.208-.2.208-.338v-.885c0-.23-.19-.42-.427-.42h-1.12c-.093 0-.197.02-.29.07l-.367.2c-.37.203-.687.472-.937.796-.15.2-.2.43-.2.662z" opacity="0" fill="none"/>
+                          <path d="M12.016 2.01c-5.526 0-10.005 4.479-10.005 10.005s4.479 10.005 10.005 10.005c5.031 0 9.276-3.714 9.957-8.583l-1.92-0.741c-0.655 3.32-3.666 5.894-7.986 5.894-4.417 0-8.005-3.588-8.005-8.005s3.588-8.005 8.005-8.005c2.316 0 4.417 0.99 5.884 2.584l-2.023 2.023h5.044v-5.044l-2.091 2.091c-1.636-1.748-3.97-2.825-6.621-2.825z" fill="#000000" stroke="none"/>
+                          <path d="M12.016 2.01c-5.526 0-10.005 4.479-10.005 10.005s4.479 10.005 10.005 10.005c5.031 0 9.276-3.714 9.957-8.583l-1.92-0.741c-0.655 3.32-3.666 5.894-7.986 5.894-4.417 0-8.005-3.588-8.005-8.005s3.588-8.005 8.005-8.005c2.316 0 4.417 0.99 5.884 2.584l-2.023 2.023h5.044v-5.044l-2.091 2.091c-1.636-1.748-3.97-2.825-6.621-2.825z" fill="#000000" stroke="none" opacity="0"/>
+                          <path d="M12.016 2.01c-5.526 0-10.005 4.479-10.005 10.005s4.479 10.005 10.005 10.005c5.031 0 9.276-3.714 9.957-8.583l-1.92-0.741c-0.655 3.32-3.666 5.894-7.986 5.894-4.417 0-8.005-3.588-8.005-8.005s3.588-8.005 8.005-8.005c2.316 0 4.417 0.99 5.884 2.584l-2.023 2.023h5.044v-5.044l-2.091 2.091c-1.636-1.748-3.97-2.825-6.621-2.825z" fill="#000000" stroke="none" opacity="0.6"/>
+                          <path d="M12.016 2.01c-5.526 0-10.005 4.479-10.005 10.005s4.479 10.005 10.005 10.005c5.031 0 9.276-3.714 9.957-8.583l-1.92-0.741c-0.655 3.32-3.666 5.894-7.986 5.894-4.417 0-8.005-3.588-8.005-8.005s3.588-8.005 8.005-8.005c2.316 0 4.417 0.99 5.884 2.584l-2.023 2.023h5.044v-5.044l-2.091 2.091c-1.636-1.748-3.97-2.825-6.621-2.825z" fill="#000000" stroke="none" opacity="0.6"/>
+                          <path d="M12.016 2.01c-5.526 0-10.005 4.479-10.005 10.005s4.479 10.005 10.005 10.005c5.031 0 9.276-3.714 9.957-8.583l-1.92-0.741c-0.655 3.32-3.666 5.894-7.986 5.894-4.417 0-8.005-3.588-8.005-8.005s3.588-8.005 8.005-8.005c2.316 0 4.417 0.99 5.884 2.584l-2.023 2.023h5.044v-5.044l-2.091 2.091c-1.636-1.748-3.97-2.825-6.621-2.825z" fill="#000000" stroke="none" opacity="0.6"/>
+                          <path d="M12.016 2.01c-5.526 0-10.005 4.479-10.005 10.005s4.479 10.005 10.005 10.005c5.031 0 9.276-3.714 9.957-8.583l-1.92-0.741c-0.655 3.32-3.666 5.894-7.986 5.894-4.417 0-8.005-3.588-8.005-8.005s3.588-8.005 8.005-8.005c2.316 0 4.417 0.99 5.884 2.584l-2.023 2.023h5.044v-5.044l-2.091 2.091c-1.636-1.748-3.97-2.825-6.621-2.825z" fill="#000000" stroke="none" opacity="0"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/onkar-gadade-569186351" target="_blank" class="text-gray-600 hover:text-purple-600 transition-colors duration-300 transform hover:scale-125" aria-label="LinkedIn">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16 4h-2a2 2 0 00-2 2v2H8V6a2 2 0 00-2-2H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2zM8 12h2v4H8v-4zm4 0h2v4h-2v-4zm-4-4h4a2 2 0 012 2v2a2 2 0 01-2 2h-4V8z" clip-rule="evenodd"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-8 mt-12 rounded-t-3xl shadow-inner">
+        <div class="container mx-auto text-center text-sm md:text-base">
+            <p>&copy; 2024 Easy Event. All Rights Reserved.</p>
+            <div class="mt-4 space-x-6">
+                <a href="privacy_policy.html" class="hover:underline text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+                <a href="terms_and_conditions.html" class="hover:underline text-gray-400 hover:text-white transition-colors duration-300">Terms and Conditions</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
